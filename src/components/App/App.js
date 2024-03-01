@@ -1,7 +1,13 @@
 import React from 'react';
 import Header from '../Header/Header.js';
+import Main from '../Main/Main.js';
 
 const App = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Main />;
+    </>
+  );
 };
 export default App;
