@@ -1,7 +1,13 @@
 import React from 'react';
 import Header from '../Header/Header.js';
+import Footer from '../Footer/Footer.js';
 
 const App = () => {
-  return <Header />;
+  return (
+    <div>
+      <Header /> 
+      <Footer />
+    </div>
+  )
 };
 export default App;
