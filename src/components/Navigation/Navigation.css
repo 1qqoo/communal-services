@@ -87,6 +87,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    background-color: #FF8C00;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -95,6 +96,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    background-color: #FF8C00;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -103,6 +105,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    background-color: #FF8C00;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
