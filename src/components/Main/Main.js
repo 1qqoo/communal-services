@@ -3,6 +3,7 @@ import './Main.css';
 import Navigation from '../Navigation/Navigation';
 import About from '../About/About';
 import Intro from '../Intro/Intro';
+import Problems from '../Problems/Problems';
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <Navigation />
       <About />
       <Intro />
+      <Problems />
     </main>
   );
 };
