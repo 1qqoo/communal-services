@@ -10,14 +10,14 @@ const Intro = () => {
       <div className="intro__container">
         <ul className="intro__lists">
           <li className="intro__list">
-            <h1 className="intro__list-title">Опыт</h1>
+            <h2 className="intro__list-title">Опыт</h2>
             <p className="intro__list-paragraph">
               Опыт управления многоквартирными домами с 2014 года, позволяет с
               уверенностью называть нашу команду - командой профессионалов.
             </p>
           </li>
           <li className="intro__list">
-            <h1 className="intro__list-title">Прозрачность</h1>
+            <h2 className="intro__list-title">Прозрачность</h2>
             <p className="intro__list-paragraph">
               Все просто, прозрачно и понятно как 2*2! Мы управляем
               многоквартирными домами по Договорам управления, расчеты за
