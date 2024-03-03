@@ -10,16 +10,13 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__copyright">
-          <p className="footer__text">
-            &#169;
-            <a
-              className="footer__link"
-              href="#pot"
-            >
-              https://your-site.ru
-            </a>
-            Все права защищены.
-          </p>
+          <a
+            className="footer__link"
+            href="#pot"
+          >
+            &#169; https://your-site.ru
+          </a>
+          <p className="footer__text"> Все права защищены.</p>
           <p className="footer__text">
             Копирование материалов только по письменному разрешению.
           </p>

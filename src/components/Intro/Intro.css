@@ -43,3 +43,22 @@
 .intro__list-span {
   color: #ff8c00;
 }
+
+@media screen and (max-width: 680px) {
+  .intro {
+    margin-bottom: 60px;
+  }
+
+  .intro__lists {
+    flex-direction: column;
+  }
+
+  .intro__list {
+    max-width: 100%;
+  }
+
+  .intro__list-title {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+}

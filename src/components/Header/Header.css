@@ -22,7 +22,7 @@
 }
 
 .header__title {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 800;
   color: #000000;
 }
@@ -31,4 +31,17 @@
   font-size: 20px;
   font-weight: 800;
   color: #000000;
+}
+
+@media screen and (max-width: 740px) {
+  .header__container {
+    flex-direction: column;
+  }
+
+  .header__title {
+    font-size: 20px;
+  }
+  .header__span {
+    font-size: 16px;
+  }
 }

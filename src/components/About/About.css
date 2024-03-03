@@ -6,12 +6,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+  overflow: hidden;
 }
 
 .about__container {
   margin: 0;
   padding: 0;
-  max-width: 800px;
 }
 
 .about__title {
@@ -48,6 +49,7 @@
   width: 180px;
   height: 50px;
   display: flex;
+  align-items: center;
   justify-content: center;
   border-radius: 8px;
   cursor: pointer;
@@ -73,4 +75,43 @@
   margin: 0;
   padding: 0;
   width: 400px;
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .about__box {
+    width: 100%;
+  }
+
+  .about__container {
+    max-width: 100%;
+  }
+
+  .about__image {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__title {
+    font-size: 20px;
+  }
+
+  .about__subtitle {
+    font-size: 18px;
+  }
+
+  .about__text {
+    font-size: 16px;
+  }
+
+  .about__link {
+    font-size: 16px;
+  }
 }
