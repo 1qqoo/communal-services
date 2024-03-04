@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navigation.css';
 
 export default function Navigation() {
@@ -6,6 +6,20 @@ export default function Navigation() {
     const[isActive1, setIsActive1] = useState(false);
     const[isActive2, setIsActive2] = useState(false);
     const[isActive3, setIsActive3] = useState(false);
+
+    const[windowScroll, setWindowScroll] = useState(window.scrollY);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setWindowScroll(window.scrollY);
+        };
+        
+        window.addEventListener('scroll', handleScroll);
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, []);
 
     function toggleActive(checkboxNumber) {
         if(checkboxNumber === 1) {
@@ -24,7 +38,7 @@ export default function Navigation() {
     }
 
     return (
-        <section className='navigation'>
+        <section className={`navigation ${windowScroll > 106 ? 'navigation_type_fixed' : ''}`}>
             <h1 className='navigation__title'>"КОМФОРТЖИЛСЕРВИС" управляющая компания</h1>
             <div className='navigation__box'>
                 <ul className='navigation__links'>
