@@ -181,7 +181,7 @@
 }
 
 .navigation__links li:hover {
-    color: rgba(255, 140, 0, 0.3);
+    color: rgba(255, 140, 0, 0.6);
 }
 
 /* Поворот треугольников */
