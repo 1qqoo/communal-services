@@ -198,10 +198,17 @@
     cursor: pointer;
     height: 100%;
     border-radius: 8px;
+}
+
+.navigation__route {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
     transition: .5s;
 }
 
-.navigation__links li:hover {
+.navigation__route:hover {
     color: rgba(255, 140, 0, 0.6);
 }
 

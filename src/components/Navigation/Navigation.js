@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Navigation.css';
+import { Link } from 'react-router-dom';
 
 export default function Navigation() {
 
@@ -40,10 +41,10 @@ export default function Navigation() {
     return (
         <section className={`navigation ${windowScroll > 106 ? 'navigation_type_fixed' : ''}`}>
             <h1 className='navigation__title'>"КОМФОРТЖИЛСЕРВИС" управляющая компания</h1>
-            <div className='navigation__box'>
+            <nav className='navigation__box'>
                 <ul className='navigation__links'>
-                    <li>Главная</li>
-                    <li>Новости</li>
+                    <li><Link className='navigation__route' to='/'>Главная</Link></li>
+                    <li><Link className='navigation__route' to='/news'>Новости</Link></li>
                 </ul>
                 <div className='navigation__container'>
                     <input id='menu' type='checkbox' checked={isActive1} onChange={() => {toggleActive(1)}} />
@@ -72,7 +73,7 @@ export default function Navigation() {
                         <li>MS MKD (для сотрудников)</li>
                     </ul>
                 </div>
-            </div>
+            </nav>
         </section>
     )
 }

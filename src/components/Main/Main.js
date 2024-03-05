@@ -1,6 +1,5 @@
 import React from 'react';
 import './Main.css';
-import Navigation from '../Navigation/Navigation';
 import About from '../About/About';
 import Intro from '../Intro/Intro';
 import Problems from '../Problems/Problems';
@@ -8,7 +7,6 @@ import Problems from '../Problems/Problems';
 const Main = () => {
   return (
     <main className="main">
-      <Navigation />
       <About />
       <Intro />
       <Problems />
