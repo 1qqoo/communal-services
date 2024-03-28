@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '../Header/Header.js';
 import Main from '../Main/Main.js';
 import Footer from '../Footer/Footer.js';
 import News from '../News/News.js';
 import Navigation from '../Navigation/Navigation.js';
 
-import { getNews } from '../../utils/NewsApi.js';
+// import { getNews } from '../../utils/NewsApi.js';
 
 import { PageProvider } from '../../contexts/PageContext.js';
 import { Route, Routes } from 'react-router-dom';
+import Documents from '../Documents/Documents.js';
 
 const App = () => {
-
   // const [news, setNews] = useState([]);
 
   // async function getAllNews() {
@@ -23,32 +23,35 @@ const App = () => {
   //     console.log(err);
   //   }
   // }
-  
+
   return (
     <PageProvider>
       <>
         <Header />
         <Navigation />
         <Routes>
-          <Route 
-            path='/'
+          <Route
+            path="/"
+            element={<Main />}
+          />
+          <Route
+            path="/news"
             element={
-              <Main />
+              <News
+              // getAllNews={getAllNews}
+              // news={news}
+              />
             }
           />
-          <Route 
-            path='/news'
-            element={
-              <News 
-                // getAllNews={getAllNews}
-                // news={news}
-              />
-            }          
+
+          <Route
+            path="/documents"
+            element={<Documents />}
           />
         </Routes>
         <Footer />
       </>
-    </PageProvider>  
+    </PageProvider>
   );
 };
 
