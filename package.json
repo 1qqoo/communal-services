@@ -1,7 +1,6 @@
 {
   "name": "communal-services",
   "version": "0.1.0",
-  "homepage": "https://1qqoo/github.io/communal-services",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
