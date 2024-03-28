@@ -1,6 +1,5 @@
 import React from 'react';
 import './Documents.css';
-import DocViewer, { DocViewerRenderers } from 'react-doc-viewer';
 
 // const docs = [
 //   {
