@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import Header from '../Header/Header.js';
 import Main from '../Main/Main.js';
 import Footer from '../Footer/Footer.js';
@@ -10,6 +11,7 @@ import Navigation from '../Navigation/Navigation.js';
 import { PageProvider } from '../../contexts/PageContext.js';
 import { Route, Routes } from 'react-router-dom';
 import Documents from '../Documents/Documents.js';
+import Login from '../Login/Login.js';
 
 const App = () => {
   // const [news, setNews] = useState([]);
@@ -26,9 +28,10 @@ const App = () => {
 
   return (
     <PageProvider>
-      <>
+      <div className='body'>
         <Header />
-        <Navigation />
+        <Login />
+        {/* <Navigation />
         <Routes>
           <Route
             path="/"
@@ -48,9 +51,9 @@ const App = () => {
             path="/documents"
             element={<Documents />}
           />
-        </Routes>
+        </Routes> */}
         <Footer />
-      </>
+      </div>
     </PageProvider>
   );
 };
