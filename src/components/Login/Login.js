@@ -1,6 +1,8 @@
 import React from 'react';
 import './Login.css';
 
+import { Link } from 'react-router-dom';
+
 export default function Login() {
     return (
         <section className='login'>
@@ -8,7 +10,7 @@ export default function Login() {
                 <div className='login__info-container'>
                     <h1 className='login__title'>Добро пожаловать!</h1>
                     <p className='login__register'>Нет учетной записи ? Зарегестрируйтесь !</p>
-                    <button className='login__button login__button_type_register'>Регистрация</button>
+                    <Link className='login__button login__button_type_register' to='/signup'>Регистрация</Link>
                 </div>
                 <div className='login__form-container'>
                     <p className='login__text'>Войти в учетную запись</p>

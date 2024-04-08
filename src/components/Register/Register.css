@@ -1,0 +1,143 @@
+.register {
+    margin: 0;
+    padding: 60px 0;
+    position: relative;
+}
+
+.register__container {
+    margin: 0;
+    padding: 0;
+    /* width: 400px; */
+    display: flex;
+    /* background-color: #ff8c00; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 18px;
+    -webkit-box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.2);
+}
+
+.register__info-container {
+    margin: 0;
+    padding: 120px 0;
+    width: 480px;
+    background-color: #ff8c00;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.register__title {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    line-height: normal;
+    font-weight: 600;
+}
+
+.register__login {
+    margin: 0;
+    margin-bottom: 55px;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.register__button {
+    margin: 0;
+    padding: 15px 0;
+    width: 180px;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.register__button_type_login {
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.register__button_type_login:hover {
+    opacity: .7;
+}
+
+.register__form-container {
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.register__form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register__text {
+    margin: 0;
+    margin-top: 55px;
+    margin-bottom: 45px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: normal;
+    font-weight: 600;
+}
+
+.register__box {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.register__input {
+    margin: 0;
+    padding: 10px 15px;
+    border: none;
+    background-color: #e6e6e6;
+    color: #000;
+    width: 350px;
+}
+
+.register__span {
+    margin: 0;
+    padding: 5px 0;
+    height: 16px;
+}
+
+.register__button_type_register {
+    margin: 35px auto 0;
+    background-color: #fff;
+    border: 2px solid #ff8c00;
+}
+
+.register__button_type_register:hover {
+    opacity: .7;
+}

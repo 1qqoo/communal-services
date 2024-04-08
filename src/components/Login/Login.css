@@ -69,6 +69,8 @@
 }
 
 .login__button_type_register {
+    text-decoration: none;
+    text-align: center;
     border: 2px solid #fff;
     background-color: transparent;
     color: #fff;
